@@ -1,0 +1,47 @@
+Matlab lec 2
+
+%-- 10/29/2023 2:05 PM --%
+[L,mapL]=imread('img 256x256 grayscale.png')
+clc
+[L,mapL]=imread('img 256x256 grayscale.png');
+imshow(L)
+[t lut1] = imread('trees.tif');
+imshow(t)
+imshow(t,lut1)
+[f lut2] = imread('football.jpg');
+imshow(f,lut2)
+figure;imshow(f,lut2);
+figure;imshow(f,lut1);
+figure;imshow(t,lut1);
+figure;imshow(L,mapL);
+[L,mapL]=imread('omar.png')
+[L,mapL]=imread('omar.png'):
+[L,mapL]=imread('omar.png');
+clc
+figure;imshow(L,mapL);
+clc
+megray = rgb2gray(L);
+imshow(megray);
+imwrite(megray,'megray.tif');
+[o,luto]=imread('megray.tif');
+imshow(o)
+two = [o,o];
+imshow(two);
+four = [two,two];
+imshow(four);
+eight = [four,four];
+imshow(eight);
+eightbyeight = [eight;eight];
+imshow(eightbyeight);
+megray(1:20,:) = 0
+megray(1:20,:) = 0;
+imshow(megray);
+megray(-20:,:) = 0;
+megray(:-20,:) = 0;
+megray(236:,:) = 0;
+megray(236:255,:) = 0;
+imshow(megray);
+megray(:,1:20) = 0;
+imshow(megray);
+megray(:,236:255) = 0;
+imshow(megray);
